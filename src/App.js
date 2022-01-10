@@ -1,13 +1,23 @@
-import './App.css';
+import { Component } from "react";
+import Dashboard from "./Dashboard";
+import Welcome from "./Welcome";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>SoliFarmer</h1>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      user: null,
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        {this.state.user == null && <Welcome />}
+        {this.state.user && <Dashboard user={this.state.user} />}
+      </div>
+    );
+  }
 }
 
 export default App;
