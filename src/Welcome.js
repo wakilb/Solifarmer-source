@@ -18,7 +18,7 @@ class Welcome extends Component {
               <a href="/login" className="btn btn-primary ms-2">
                 Log In
               </a>
-              <a href="/meetings" className="btn btn-outline-primary ms-2">
+              <a href="/contact" className="btn btn-outline-primary ms-2">
                 Contact
               </a>
             </div>

@@ -8,7 +8,7 @@ class Dashboard extends Component {
 
     return (
       <div className="wrapper">
-        <Navigation />
+        <Navigation user={user} />
         <Main></Main>
       </div>
     );
