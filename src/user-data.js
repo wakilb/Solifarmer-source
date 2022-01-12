@@ -10,6 +10,16 @@ const data = [
     email: "wakil@example.fi",
   },
   {
+    name: "staff one",
+    role: "Staff",
+    email: "staff.one@example.fi",
+  },
+  {
+    name: "staff two",
+    role: "Staff",
+    email: "staff.two@example.fi",
+  },
+  {
     name: "Ruokavirasto",
     role: "Visitor",
     email: "ruokavirasto@examlpe.fi",

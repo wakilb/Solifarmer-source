@@ -2,7 +2,7 @@ import usersData from "./user-data";
 
 function FarmStaff() {
   return (
-    <table className="table table-borderless" id="staff-list">
+    <table className="table table-borderless table-list" id="staff-list">
       <thead>
         <tr>
           <th>Owners</th>

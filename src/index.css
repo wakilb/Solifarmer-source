@@ -9,6 +9,7 @@
   display: flex;
   width: 100%;
   align-items: stretch;
+  background-color: var(--blue-white-color);
 }
 
 .wrapper {
@@ -51,4 +52,21 @@
 #sidebar ul li.active > a, a[aria-expanded="true"] {
   color: #fff;
   background: #6d7fcc;
+}
+
+.table-list thead{
+  background-color: var(--blue-dark-color);
+  color: var(--orang-color);
+}
+
+.table-list td>a{
+  color: var(--blue-dark-color);
+  text-decoration: none;
+  background-color: var(--blue-sky-color);
+}
+
+.table-list td>a:hover{
+  color: var(--blue-sky-color);
+  border: var(--blue-dark-color) 1px solid;
+  background-color: var(--blue-white-color);
 }
