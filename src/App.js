@@ -1,6 +1,6 @@
 import { Component } from "react";
-import Dashboard from "./Dashboard";
-import Welcome from "./Welcome";
+import Dashboard from "./Pages/Dashboard";
+import Welcome from "./Pages/Welcome";
 
 class App extends Component {
   constructor() {
