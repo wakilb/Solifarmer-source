@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { GiFarmer, GiWoodenFence } from "react-icons/gi";
 import { IoLogOut, IoHelpCircle } from "react-icons/io5";
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Navigation extends Component {
   render() {

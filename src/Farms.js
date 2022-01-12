@@ -5,37 +5,38 @@ import {
   AiOutlineCopy,
   AiOutlineDelete,
 } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function Farms() {
   return (
     <table className="table table-hover" id="farms-list">
       <thead>
         <tr>
-          <th scope="col">Name</th>
-          <th scope="col">Action</th>
+          <th>Name</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
-        {farmsData.map((farmData) => (
-          <tr>
+        {farmsData.map((farmData, key) => (
+          <tr key={key}>
             <th scope="row">{farmData.location}</th>
             <td>
-              <a href="#" className="btn">
+              <Link to={`/farm/${farmData.location}/manage`} className="btn">
                 <AiOutlineSetting className="me-2" />
                 Menage
-              </a>
-              <a href="#" className="btn">
+              </Link>
+              <Link to={`/farm/${farmData.location}`} className="btn">
                 <AiOutlineEdit className="me-2" />
                 Edit
-              </a>
-              <a href="#" className="btn">
+              </Link>
+              <Link to="#" className="btn">
                 <AiOutlineCopy className="me-2" />
                 Duplicate
-              </a>
-              <a href="#" className="btn">
+              </Link>
+              <Link to="#" className="btn">
                 <AiOutlineDelete className="me-2" />
                 Delete
-              </a>
+              </Link>
             </td>
           </tr>
         ))}
