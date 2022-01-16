@@ -70,3 +70,14 @@
   border: var(--blue-dark-color) 1px solid;
   background-color: var(--blue-white-color);
 }
+
+.opertaion-btn a{
+  color: var(--blue-dark-color);
+  background-color: var(--orang-color);
+}
+
+.opertaion-btn a:hover{
+  color: var(--orang-color);
+  border: var(--orang-color) 1px solid;
+  background-color: var(--blue-white-color);
+}

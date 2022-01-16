@@ -21,9 +21,22 @@ class Main extends Component {
         ></Route>
         <Route path="/farms/new" element={<AddFarm></AddFarm>}></Route>
         <Route path="/users" element={<Users></Users>}></Route>
-        <Route path="/user/add" element={<User></User>}></Route>
-        <Route path="/user/edit/:userName" element={<User></User>}></Route>
-        <Route path="/user/new/:userName" element={<User></User>}></Route>
+        <Route
+          path="/user/create"
+          element={<User mode="insert"></User>}
+        ></Route>
+        <Route
+          path="/user/edit/:id"
+          element={<User mode="edit"></User>}
+        ></Route>
+        <Route
+          path="/user/create/:id"
+          element={<User mode="duplicate"></User>}
+        ></Route>
+        <Route
+          path="/user/view/:id"
+          element={<User mode="view"></User>}
+        ></Route>
       </Routes>
     );
   }
