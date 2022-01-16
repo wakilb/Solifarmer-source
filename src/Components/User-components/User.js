@@ -1,11 +1,20 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { store } from "react-notifications-component";
 
 function User(props) {
   let params = useParams();
   const componentMode = props.mode;
   console.log(componentMode);
   const userId = params.id;
+
+  const notification = {
+    title: "Wonderful!",
+    message: "Configurable",
+    type: "success",
+    insert: "top",
+    container: "top-right",
+  };
 
   //User object attributes
   const [picture, setPicture] = useState("");
@@ -34,6 +43,14 @@ function User(props) {
       headers: {
         "Content-Type": "application/json",
       },
+    }).then(() => {
+      store.addNotification({
+        title: "Wonderful!",
+        message: "Configurable",
+        type: "success",
+        insert: "top",
+        container: "top-right",
+      });
     });
 
     const body = await result.json();

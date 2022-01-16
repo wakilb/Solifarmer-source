@@ -7,19 +7,24 @@ import { Routes, Route } from "react-router-dom";
 import AddFarm from "../../Pages/AddFarm";
 import FarmManage from "../Farm-components/FarmManage";
 import User from "../User-components/User";
+import { store } from "react-notifications-component";
 
 class Main extends Component {
   render() {
     return (
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
+
+        {/* Farm Routes */}
         <Route path="/farms" element={<Farms></Farms>}></Route>
         <Route path="/farm/:farmName" element={<Farm></Farm>}></Route>
         <Route
           path="/farm/:farmName/manage"
           element={<FarmManage></FarmManage>}
         ></Route>
-        <Route path="/farms/new" element={<AddFarm></AddFarm>}></Route>
+        <Route path="/farm/create" element={<AddFarm></AddFarm>}></Route>
+
+        {/* User Routes */}
         <Route path="/users" element={<Users></Users>}></Route>
         <Route
           path="/user/create"

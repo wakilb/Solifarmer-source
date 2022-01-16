@@ -4,10 +4,13 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
+import "react-notifications-component/dist/theme.css";
 import { BrowserRouter } from "react-router-dom";
+import ReactNotification from "react-notifications-component";
 
 ReactDOM.render(
   <BrowserRouter>
+    <ReactNotification></ReactNotification>
     <App />
   </BrowserRouter>,
   document.getElementById("root")
