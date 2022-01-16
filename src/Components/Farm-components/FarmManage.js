@@ -47,8 +47,8 @@ function FarmManage() {
     }
     /* Filter List */
     valideList = list.filter(filterInvalidRecords);
-    console.log(valideList);
-    setData(valideList);
+
+    setData(list);
   };
 
   // handle file upload
